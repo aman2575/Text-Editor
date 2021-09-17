@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyTextEditor</class>
+ <widget class="QMainWindow" name="MyTextEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyTextEditor</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>0</y>
+      <width>371</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuText">
+    <property name="title">
+     <string>Text</string>
+    </property>
+    <addaction name="actionBold"/>
+    <addaction name="actionSuperScript"/>
+    <addaction name="actionSubScript"/>
+    <addaction name="actionNormal"/>
+   </widget>
+   <addaction name="menuText"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNormal"/>
+   <addaction name="actionBold"/>
+   <addaction name="actionSuperScript"/>
+   <addaction name="actionSubScript"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="appresources.qrc">
+     <normaloff>:/Images/icons/bold.png</normaloff>:/Images/icons/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionSuperScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="appresources.qrc">
+     <normaloff>:/Images/icons/superscript.png</normaloff>:/Images/icons/superscript.png</iconset>
+   </property>
+   <property name="text">
+    <string>SuperScript</string>
+   </property>
+  </action>
+  <action name="actionSubScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="appresources.qrc">
+     <normaloff>:/Images/icons/subscript.png</normaloff>:/Images/icons/subscript.png</iconset>
+   </property>
+   <property name="text">
+    <string>SubScript</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="appresources.qrc">
+     <normaloff>:/Images/icons/normal.jpg</normaloff>:/Images/icons/normal.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Normal</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="appresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
